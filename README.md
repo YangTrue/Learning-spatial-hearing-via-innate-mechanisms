@@ -1,8 +1,8 @@
-# Bootstrapping Sound Source Localization through Hidden Teachers
+# Learning spatial hearing via innate mechanisms
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-This repository contains the implementation of the bootstrapping-based approach to learning sound source localization (SSL) presented in our paper: "Bootstrapping Sound Source Localization through Hidden Teachers".
+This repository contains the implementation of the bootstrapping-based approach to learning sound source localization (SSL) presented in our paper: "Learning spatial hearing via innate mechanisms".
 
 ## Overview
 
@@ -17,12 +17,9 @@ Our approach demonstrates:
 
 ```
 .
-├── data/                   # Training and testing sound examples
-├── environments/           # Simulated acoustic environments
+├── data/                   # Scripts to laod training and testing sound examples
 ├── models/                 # Model implementations
-│   ├── teacher_models/     # Hidden Teacher implementations
-│   ├── student_models/     # Student network architectures
-│   └── baseline_models/    # Baseline implementations for comparison
+├── options/                # Options for model configuration
 ├── experiments/            # Experiment configurations and scripts
 ├── results/                # Experimental results and visualizations
 ├── pretrained_models/      # Pre-trained model weights
@@ -37,21 +34,8 @@ Requirements:
 - NumPy
 - SciPy
 - Matplotlib
-- Librosa
-- PyTorch3D (for HRTF computations)
+- Slab (for HRTF computations)
 
-```bash
-# Clone the repository
-git clone https://github.com/your-username/ssl-bootstrapping.git
-cd ssl-bootstrapping
-
-# Create a virtual environment
-python -m venv env
-source env/bin/activate  # On Windows: env\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-```
 
 ## Using the Pre-trained Models
 
@@ -121,11 +105,11 @@ The provided model weights include:
 If you use this code in your research, please cite our paper:
 
 ```
-@article{author2023bootstrapping,
-  title={Bootstrapping Sound Source Localization through Hidden Teachers},
-  author={Author, A. and Author, B.},
-  journal={Journal Name},
-  year={2023}
+@article{chu2025learning,
+  title={Learning spatial hearing via innate mechanisms},
+  author={Chu, Yang and Luk, Wayne and Goodman, Dan},
+  journal={arXiv preprint arXiv:2001.10605},
+  year={2025}
 }
 ```
 
@@ -135,4 +119,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Contact
 
-For questions or clarifications, please open an issue or contact [author@example.com](mailto:author@example.com).
+For questions or clarifications, please open an issue or contact [y.chu16@imperial.ac.uk](mailto:y.chu16@imperial.ac.uk).
